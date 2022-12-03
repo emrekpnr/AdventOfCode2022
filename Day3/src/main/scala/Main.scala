@@ -28,7 +28,7 @@ object Main {
       .mapToInt(score => score.toInt)
       .sum()
 
-    println("Total Score of Part 12: " + partTwo)
+    println("Total Score of Part 2: " + partTwo)
 
   }
 
