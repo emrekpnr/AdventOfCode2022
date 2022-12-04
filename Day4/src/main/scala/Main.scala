@@ -10,7 +10,7 @@ object Main {
       .count(streamTuple => doesFullyContainOther(streamTuple))
 
     val partTwo = convertInputToRangeStreams(lines)
-      .count(streamTuple => streamTuple._1.count(assignment => streamTuple._2.contains(assignment)) > 0)
+      .count(streamTuple => streamTuple._1.exists(assignment => streamTuple._2.contains(assignment)))
 
     println("Total Score of Part 1: " + partOne)
     println("Total Score of Part 2: " + partTwo)
